@@ -12,8 +12,6 @@
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 40px;
 }
-
-/* SEÇÕES */
 .footer-section h3 {
   color: #d4af37;
   margin-bottom: 15px;
@@ -33,20 +31,17 @@
   color: #d4af37;
 }
 
-/* LOGO */
 .logo {
   color: #e4bd3f;
   font-size: 22px;
   margin-bottom: 10px;
 }
 
-/* LISTA */
 .footer-section ul {
   list-style: none;
   padding: 0;
 }
 
-/* BOTTOM */
 .footer-bottom {
   margin-top: 40px;
   text-align: center;
