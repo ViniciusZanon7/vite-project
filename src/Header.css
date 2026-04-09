@@ -1,0 +1,105 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #000;
+  color: #d4af37;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.header img {
+  width: 120px;
+}
+.icons {
+  display: flex;
+  gap: 20px;
+}
+.icons a {
+  color: #d4af37;
+  text-decoration: none;
+}
+.icons a:visited {
+  color: #d4af37;
+}
+.icons a:hover {
+  opacity: 0.7;
+  transform: scale(1.2);
+}
+.icons svg {
+  font-size: 28px;
+  transition: 0.3s;
+}
+.icons svg:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+.menu {
+  display: flex;
+  gap: 30px;
+}
+.menu a {
+  text-decoration: none;
+  color: #d4af37;
+  font-weight: 500;
+}
+.menu a:hover {
+  opacity: 0.7;
+}
+.menu-item:hover .arrow {
+  transform: rotate(180deg);
+  transition: 0.3s;
+}
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.dropdown {
+  display: none;
+}
+.menu-item:hover .dropdown {
+  display: block;
+}
+.dropdown {
+  position: absolute;
+  background-color: black;
+  color: gold;
+  padding: 15px;
+  top: 100%;
+  left: 0;
+  min-width: 150px;
+  border: 1px solid #d4af37;
+}
+.dropdown p {
+  margin: 5px 0;
+  display: block;
+  cursor: pointer;
+}
+.dropdown p:hover {
+  opacity: 0.7;
+}
+.menu-item {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.arrow {
+  margin-left: 5px;
+  font-size: 20px;
+  display: inline-block;
+  transition: 0.3s;
+  position: relative;
+  top: 2px;
+}
+.spinner {
+  animation: spinner 5s linear infinite;
+}
+@keyframes spinner {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,117 @@
+.banner {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+.banner h1 {
+  margin-bottom: 40px;
+  font-size: 28px;
+}
+
+.carousel {
+  position: relative;
+  width: 350px;
+  height: 420px;
+}
+
+.card {
+  position: absolute;
+  width: 100%;
+  background: rgba(20, 20, 20, 0.9);
+  border-radius: 25px;
+  padding: 30px 20px;
+  text-align: center;
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
+}
+
+.card.active {
+  transform: scale(1.08);
+  box-shadow:
+    0 30px 80px rgb(218, 178, 0),
+    0 0 40px rgba(255, 242, 0, 0.6);
+}
+
+.card img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 20px;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.card h2 {
+  color: #e4bd3f;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 28px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #bbbbbb, #fbfbfb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 15px 0;
+}
+
+.btn {
+  padding: 12px 30px;
+  border: 1px solid #d4af37;
+  background: transparent;
+  color: #d4af37;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 30px #d4af37;
+  background: #d4af37;
+  color: #000;
+}
+
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.7);
+  padding: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  z-index: 9999;
+  transition: 0.3s;
+}
+
+.carousel-arrow:hover {
+  transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-arrow.left {
+  left: -70px;
+}
+
+.carousel-arrow.right {
+  right: -70px;
+}
