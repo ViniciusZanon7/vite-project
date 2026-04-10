@@ -47,10 +47,22 @@ export default function Banner() {
           return (
             <motion.div
               key={item.id}
+              drag="x"
+              dragConstraints={{ left: 0, right: 0 }}
+              dragElastic={0.2}
+              onDragEnd={(e, info) => {
+                if (info.offset.x < -50) {
+                  setAutoPlay(false);
+                  next();
+                } else if (info.offset.x > 50) {
+                  setAutoPlay(false);
+                  prev();
+                }
+              }}
               animate={{
-                scale: i === index ? 1 : 0.7,
+                scale: i === index ? 1 : 0.75,
                 opacity: Math.abs(i - index) > 2 ? 0 : i === index ? 1 : 0.2,
-                x: (i - index) * 260,
+                x: (i - index) * (window.innerWidth < 768 ? 160 : 220),
                 rotate: i === index ? 0 : i < index ? -8 : 8,
                 zIndex: i === index ? 10 : 0,
               }}

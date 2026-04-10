@@ -1,38 +1,42 @@
 import "./Footer.css";
+import img991Bebidas from "/assets/991Bebidas.png";
 import { FaInstagram, FaWhatsapp, FaMapMarkerAlt } from "react-icons/fa";
 
 export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer-container">
-        {/* LOGO / NOME */}
         <div className="footer-section">
-          <h2 className="logo">991 Bebidas</h2>
+          <div className="logo">
+            <img src={img991Bebidas} alt="991 Bebidas" />
+          </div>
           <p>Sua loja premium de bebidas.</p>
         </div>
 
-        {/* LINKS */}
         <div className="footer-section">
           <h3>Links</h3>
           <ul>
             <li>Início</li>
             <li>Produtos</li>
             <li>Promoções</li>
-            <li>Contato</li>
           </ul>
         </div>
-
-        {/* CONTATO */}
         <div className="footer-section">
           <h3>Contato</h3>
           <p>
-            <FaWhatsapp /> (41) 99999-9999
+            <a href="https://wa.me/5541999474299">
+              <FaWhatsapp /> (41) 99947-4299
+            </a>
           </p>
           <p>
-            <FaInstagram /> @991bebidas
+            <a href="https://www.instagram.com/991bebidas?igsh=bG51cWZoNzVtd3hp">
+              <FaInstagram /> @991bebidas
+            </a>
           </p>
           <p>
-            <FaMapMarkerAlt /> Curitiba - PR
+            <a href="https://maps.app.goo.gl/gkpBExzHA1tUwVbP9">
+              <FaMapMarkerAlt /> Curitiba - PR
+            </a>
           </p>
         </div>
       </div>
