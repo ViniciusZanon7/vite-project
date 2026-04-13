@@ -75,7 +75,22 @@ export default function Banner() {
 
               <p className="price">R$ {item.preco.toFixed(2)}</p>
 
-              <button className="btn">Comprar</button>
+              <button
+                className="btn"
+                onClick={() => {
+                  const mensagem =
+                    "Olá! Fiquei interessado no(a) " +
+                    item.nome +
+                    " no valor de R$ " +
+                    item.preco.toFixed(2) +
+                    '"';
+                  window.open(
+                    `https://wa.me/5541999474299?text=${encodeURIComponent(mensagem)}`,
+                  );
+                }}
+              >
+                Comprar
+              </button>
             </motion.div>
           );
         })}
