@@ -87,19 +87,39 @@ export default function Header() {
         </div>
         {/*Ícones*/}
         <div className="icons">
-          <a href="https://wa.me/5541999474299">
+          <a
+            href="https://wa.me/5541999474299?text=Olá!+Vim+através+do+site+991+Bebidas.+Gostaria+de+saber+mais+sobre+os+produtos."
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <PiWhatsappLogoLight />
           </a>
-          <a href="https://www.instagram.com/991bebidas?igsh=bG51cWZoNzVtd3hp">
+          <a
+            href="https://www.instagram.com/991bebidas?igsh=bG51cWZoNzVtd3hp"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <CiInstagram />
           </a>
-          <a href="tel:+5541999474299">
+          <a
+            href="tel:+5541999474299"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <CiPhone />
           </a>
-          <a href="https://maps.app.goo.gl/gkpBExzHA1tUwVbP9">
+          <a
+            href="https://maps.app.goo.gl/gkpBExzHA1tUwVbP9"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaMapLocationDot />
           </a>
-          <a href="https://www.ifood.com.br/delivery/curitiba-pr/991-bebidas-e-conveniencia-portao/d8e8dbc9-f527-4eb1-afae-236f6e7329c7?UTM_Medium=share">
+          <a
+            href="https://www.ifood.com.br/delivery/curitiba-pr/991-bebidas-e-conveniencia-portao/d8e8dbc9-f527-4eb1-afae-236f6e7329c7?UTM_Medium=share"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <SiIfood />
           </a>
         </div>
@@ -153,19 +173,39 @@ export default function Header() {
         <hr />
 
         <div className="mobile-icons">
-          <a href="https://wa.me/5541999474299">
+          <a
+            href="https://wa.me/5541999474299"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <PiWhatsappLogoLight />
           </a>
-          <a href="https://www.instagram.com/991bebidas?igsh=bG51cWZoNzVtd3hp">
+          <a
+            href="https://www.instagram.com/991bebidas?igsh=bG51cWZoNzVtd3hp"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <CiInstagram />
           </a>
-          <a href="tel:+5541999474299">
+          <a
+            href="tel:+5541999474299"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <CiPhone />
           </a>
-          <a href="https://maps.app.goo.gl/gkpBExzHA1tUwVbP9">
+          <a
+            href="https://maps.app.goo.gl/gkpBExzHA1tUwVbP9"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaMapLocationDot />
           </a>
-          <a href="https://www.ifood.com.br/delivery/curitiba-pr/991-bebidas-e-conveniencia-portao/d8e8dbc9-f527-4eb1-afae-236f6e7329c7?UTM_Medium=share">
+          <a
+            href="https://www.ifood.com.br/delivery/curitiba-pr/991-bebidas-e-conveniencia-portao/d8e8dbc9-f527-4eb1-afae-236f6e7329c7?UTM_Medium=share"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <SiIfood />
           </a>
         </div>
