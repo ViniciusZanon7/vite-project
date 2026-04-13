@@ -174,7 +174,7 @@ export default function Header() {
 
         <div className="mobile-icons">
           <a
-            href="https://wa.me/5541999474299"
+            href="https://wa.me/5541999474299?text=Olá!+Vim+através+do+site+991+Bebidas.+Gostaria+de+saber+mais+sobre+os+produtos."
             target="_blank"
             rel="noopener noreferrer"
           >
